@@ -1,6 +1,7 @@
-import { FiMenu, FiStar } from "react-icons/fi";
+import { FiMenu, FiSearch, FiStar } from "react-icons/fi";
 import Button from "./ui/Button";
 import Link from "next/link";
+import Input from "./ui/Input";
 
 export default function Header() {
     return (
@@ -12,12 +13,13 @@ export default function Header() {
                 <h1 className="text-2xl font-bold ml-2.5">Shiro UI</h1>
             </div>
             <div className="ml-auto hidden md:flex items-center">
-                <div className="space-x-5 mr-5">
+                <Input placeholder="Search docs" icon={<FiSearch />} />
+                <div className="ml-10 space-x-5">
                     <Link href="/">Docs</Link>
                     <Link href="/">Components</Link>
                     <Link href="/">Blog</Link>
+                    <Button variant="secondary" leftIcon={<FiStar />}>Star</Button>
                 </div>
-                <Button variant="secondary" leftIcon={<FiStar />}>Star</Button>
             </div>
             {/* モバイル */}
             <div className="ml-auto flex md:hidden items-center">
