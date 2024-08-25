@@ -12,7 +12,7 @@ export default function Header() {
     };
 
     return (
-        <header className="sticky top-0 bg-white shadow px-3.5 py-2.5 bg-white bg-opacity-50 backdrop-blur flex items-center">
+        <header className="z-50 sticky top-0 bg-white shadow px-3.5 py-2.5 bg-white bg-opacity-50 backdrop-blur flex items-center">
             <Link href="/" className="flex items-center">
                 <div className="w-[50px]">
                     <img src="/logo.png" alt="Logo" className="w-full" />

@@ -3,6 +3,7 @@ import Header from "@/components/Header";
 import Button from "@/components/ui/Button";
 import Card from "@/components/ui/Card";
 import Image from "next/image";
+import Link from "next/link";
 import { FaGithub } from "react-icons/fa";
 
 export default function Home() {
@@ -24,7 +25,7 @@ export default function Home() {
                 <h2 className="text-[20px]">Simple yet Versatile Components</h2>
               </div>
               <div className="space-x-2.5 flex">
-                <Button>Getting Started</Button>
+                <Link href="/test"><Button>Getting Started</Button></Link>
                 <Button variant="secondary" leftIcon={<FaGithub />}>GitHub</Button>
               </div>
             </div>

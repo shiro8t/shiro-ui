@@ -25,7 +25,7 @@ export default function Home() {
                 <h2 className="text-[20px]">Simple yet Versatile Components</h2>
               </div>
               <div className="space-x-2.5 flex">
-                <Link href="/docs/getting-started"><Button>Getting Started</Button></Link>
+                <Link href="/test"><Button>Getting Started</Button></Link>
                 <Button variant="secondary" leftIcon={<FaGithub />}>GitHub</Button>
               </div>
             </div>
