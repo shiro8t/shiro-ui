@@ -117,6 +117,7 @@
 .input-field::placeholder {
     color: rgb(170, 170, 170);
 }
+
 /* card カード */
 .card {
     border-radius: 10px;
