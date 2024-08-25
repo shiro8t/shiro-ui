@@ -7,6 +7,7 @@ type InputProps = {
   icon?: React.ReactNode;
   type?: string;
   placeholder?: string;
+  className?: string;
 };
 
 const Input: React.FC<InputProps> = ({
@@ -15,10 +16,11 @@ const Input: React.FC<InputProps> = ({
   value,
   icon,
   type = 'text',
-  placeholder = ''
+  placeholder = '',
+  className = '',
 }) => {
   return (
-    <div className={`input-container ${size}`}>
+    <div className={`input-container ${size} ${className}`}>
       {icon && <div className="input-icon">{icon}</div>}
       <input
         className="input-field"
