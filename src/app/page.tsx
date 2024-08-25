@@ -1,6 +1,7 @@
 "use client"
 import Header from "@/components/Header";
 import Button from "@/components/ui/Button";
+import Card from "@/components/ui/Card";
 import Image from "next/image";
 import { FaGithub } from "react-icons/fa";
 
@@ -22,11 +23,22 @@ export default function Home() {
                 <h1 className="text-[40px] font-bold">Shiro UI</h1>
                 <h2 className="text-[20px]">Simple yet Versatile Components</h2>
               </div>
-              <div className="space-x-2.5">
+              <div className="space-x-2.5 flex">
                 <Button>Getting Started</Button>
                 <Button variant="secondary" leftIcon={<FaGithub />}>GitHub</Button>
               </div>
             </div>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-5 mt-10 md:mt-0">
+            <Card title="Shiro UI 2.0 is out now!" variant="secondary">
+              Still more...
+            </Card>
+            <Card title="Shiro UI 1.0 is here!" variant="secondary">
+              Not yet...
+            </Card>
+            <Card title="Shiro UI: Now in Beta!" variant="secondary">
+              Install with npm or yarn!
+            </Card>
           </div>
         </div>
       </body>
