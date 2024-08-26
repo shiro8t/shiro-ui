@@ -4,13 +4,14 @@ import Button from "@/components/ui/Button";
 import Card from "@/components/ui/Card";
 import Image from "next/image";
 import Link from "next/link";
+import { Suspense } from "react";
 import { FaGithub } from "react-icons/fa";
 
 export default function Home() {
   return (
     <>
       <Header />
-      <body>
+      <main>
         <div className="container mx-auto my-10">
           <div className="flex flex-col md:flex-row">
             <div className="hidden md:flex w-1/2">
@@ -32,17 +33,17 @@ export default function Home() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-5 mt-10 mx-5 md:m-0">
             <Card title="Shiro UI 2.0 is out now!" variant="secondary">
-              Still more...
+              まだまだ...
             </Card>
             <Card title="Shiro UI 1.0 is here!" variant="secondary">
-              Not yet...
+              まだ...
             </Card>
             <Card title="Shiro UI: Now in Beta!" variant="secondary">
               Install with npm or yarn!
             </Card>
           </div>
         </div>
-      </body>
+      </main>
     </>
   )
 }

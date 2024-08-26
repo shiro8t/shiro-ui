@@ -83,6 +83,7 @@
 }
 .input-container:focus-within {
     border-color: #007BFF;
+    box-shadow: 0px 0px 1.5px 1.5px rgba(0, 123, 255, .05);
 }
 /* size サイズ */
 .input-container.small {
@@ -98,6 +99,9 @@
     padding: 15px 25px;
 }
 /* icon アイコン */
+.input-icon {
+    color: rgb(150, 150, 150);
+}
 .small .input-icon {
     margin-right: 7px;
 }
@@ -115,7 +119,7 @@
 }
 /* placeholder プレスホルダー */
 .input-field::placeholder {
-    color: rgb(170, 170, 170);
+    color: rgb(150, 150, 150);
 }
 
 /* card カード */
