@@ -6,6 +6,9 @@ const ubuntu = Ubuntu({ subsets: ["latin"], weight: "400" });
 
 export const metadata: Metadata = {
   title: "Shiro UI",
+  icons: {
+    apple: '/apple-touch-icon.png',
+  },
 };
 
 export default function RootLayout({
