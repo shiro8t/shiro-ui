@@ -70,7 +70,7 @@ export default function Home() {
                 </ul>
               </Accordion>
             </div>
-            <div className="flex space-x-5">
+            <div className="flex flex-col sm:flex-row space-y-5 sm:space-y-0 sm:space-x-5">
               <Select
                 options={options}
                 value={selectedOptionPrimary}
