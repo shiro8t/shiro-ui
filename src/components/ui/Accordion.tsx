@@ -4,13 +4,12 @@ type AccordionProps = {
   title: string;
   children: React.ReactNode;
   isOpen?: boolean;
-  variant?: 'primary' | 'secondary';
   className?: string;
 };
 
-const Accordion: React.FC<AccordionProps> = ({ title, children, isOpen = false, variant = 'primary', className = '' }) => {
+const Accordion: React.FC<AccordionProps> = ({ title, children, isOpen = false, className = '' }) => {
   return (
-    <details open={isOpen} className={`accordion accordion-${variant} ${className}`}>
+    <details open={isOpen} className={`accordion ${className}`}>
       <summary className="accordion-summary">
         {title}
         <span className="accordion-arrow" />

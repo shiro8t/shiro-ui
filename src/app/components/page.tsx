@@ -55,10 +55,10 @@ export default function Home() {
                 </Card>
             </div>
             <div>
-              <Accordion title="Red Velvetはどんなグループですか？" variant="secondary">
+              <Accordion title="Red Velvetはどんなグループですか？">
                 <p>Red Velvet（レッドベルベット）は2014年8月に韓国でデビューしたSMエンターテイメント所属の5人組ガールズグループです。 インパクトの強い魅惑的なイメージの「Red」と、柔らかく女性らしい「Velvet」を併せ持ち、多面的で洗練された魅力を発信できるグループとして誕生しました。</p>
               </Accordion>
-              <Accordion title="Red Velvetの有名な曲は？" variant="secondary">
+              <Accordion title="Red Velvetの有名な曲は？">
                 <p className="font-bold">Red Velvetの人気曲ランキング【2024】</p>
                 <ul>
                   <li>Cosmic</li>
@@ -70,7 +70,7 @@ export default function Home() {
                 </ul>
               </Accordion>
             </div>
-            <div className="space-y-5">
+            <div className="flex space-x-5">
               <Select
                 options={options}
                 value={selectedOptionPrimary}

@@ -237,14 +237,8 @@
     margin: 0;
     padding: 12.5px 15px;
     list-style: none;
-}
-/* variant バリアント */
-.accordion-primary summary {
-    background-color: #007bff;
-    color: #fff;
-}  
-.accordion-secondary summary {
     color: #007bff;
+    outline: none;
 }
 summary::-webkit-details-marker {
     display: none; /* デフォルトの矢印を非表示にする */
@@ -268,7 +262,7 @@ summary::-webkit-details-marker {
     height: 0;
     border-left: 7.5px solid transparent;
     border-right: 7.5px solid transparent;
-    border-top: 10px solid currentColor;
+    border-top: 12.5px solid currentColor;
     transition: transform 0.25s ease;
 }
 details[open] .accordion-arrow {
@@ -279,8 +273,11 @@ details[open] .accordion-arrow {
 .select-container {
     width: 100%;
     max-width: 250px;
+    position: relative;
+    display: inline-block;
 }
 .select {
+    cursor: pointer;
     width: 100%;
     padding: 8px 12px;
     font-size: 16px;
@@ -289,6 +286,26 @@ details[open] .accordion-arrow {
     background-color: #fff;
     appearance: none;
     transition: box-shadow 0.3s ease;
+}
+/* arrow 矢印 */
+.select-container::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 1em;
+    width: 0;
+    height: 0;
+    pointer-events: none;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 7.5px solid currentColor;
+    transform: translateY(-50%);
+}
+.select-container.primary {
+    color: #fff;
+}
+.select-container.secondary {
+    color: #007bff;
 }
 /* variant バリアント */
 .select-container.primary .select {
