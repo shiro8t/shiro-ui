@@ -1,9 +1,11 @@
 "use client"
 import Header from "@/components/Header";
+import Accordion from "@/components/ui/Accordion";
 import Button from "@/components/ui/Button";
 import Card from "@/components/ui/Card";
 import Input from "@/components/ui/Input";
 import Keyboard from "@/components/ui/Keyboard";
+import Tooltip from "@/components/ui/Tooltip";
 import { useState } from "react";
 import { FiSearch } from "react-icons/fi";
 
@@ -28,9 +30,11 @@ export default function Home() {
                 <Input placeholder="Type here..." icon={<FiSearch />} />
             </div>
             <div className="grid grid-cols-1 md:grid-cols-4 gap-5 mx-5 sm:mx-0">
-                <Card title="Red Velvet">
-                    Red Velvet（レッドベルベット、朝: 레드벨벳）は、韓国の5人組女性アイドルグループである。
-                </Card>
+                <Tooltip text="from Wikipedia">
+                  <Card title="Red Velvet">
+                      Red Velvet（レッドベルベット、朝: 레드벨벳）は、韓国の5人組女性アイドルグループである。
+                  </Card>
+                </Tooltip>
                 <Card title="Red Velvet" variant="secondary">
                     Red Velvet（レッドベルベット、朝: 레드벨벳）は、韓国の5人組女性アイドルグループである。
                 </Card>
@@ -45,6 +49,9 @@ export default function Home() {
                 <p>Press <Keyboard>Ctrl</Keyboard> + <Keyboard>C</Keyboard> to copy.</p>
             </div>
             <div>
+              <Accordion title="Section 1">
+                <p>This is the content of Section 1.</p>
+              </Accordion>
             </div>
           </div>
         </div>

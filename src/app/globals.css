@@ -190,3 +190,79 @@
     box-shadow: 0 1px 0 rgb(185, 185, 185), 0 2px 0 rgb(135, 135, 135);
     font-family: 'Courier New', Courier, monospace;
 }
+
+/* tooltip ツールチップ */
+.tooltip-container {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}  
+.tooltip-box {
+    position: absolute;
+    background-color: rgb(50, 50, 50);
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 12px;
+    white-space: nowrap;
+    z-index: 10;
+    opacity: 0;
+    transition: all 0.3s;
+    pointer-events: none;
+}  
+.tooltip-container:hover .tooltip-box {
+    opacity: 1;
+}
+/* position ポジション */
+.tooltip-top {
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 5px;
+}  
+.tooltip-right {
+    top: 50%;
+    left: 100%;
+    transform: translateY(-50%);
+    margin-left: 5px;
+}  
+.tooltip-bottom {
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 5px;
+}  
+.tooltip-left {
+    top: 50%;
+    right: 100%;
+    transform: translateY(-50%);
+    margin-right: 5px;
+}
+
+/* accordion アコーディオン */
+details.accordion {
+    border: 1px solid #007bff;
+    background-color: rgba(0, 123, 255, .05);
+    box-shadow: 0 1.5px 1.5px 1.5px rgba(0, 123, 255, .05);
+    border-radius: 5px;
+    overflow: hidden;
+}
+.accordion summary {
+    background-color: rgba(0, 123, 255, .05);
+    color: #007bff;
+    cursor: pointer;
+    font-size: 1.25rem;
+    font-weight: bold;
+    padding: 12.5px 15px;
+    list-style: none;
+    margin: 0;
+}
+.accordion summary::-webkit-details-marker {
+    display: none; /* デフォルトの矢印を非表示 */
+}
+.accordion-content {
+    border-top: 1px solid #007BFF;
+    padding: 15px;
+    color: rgb(25, 25, 25);
+    background-color: #fff;
+}
