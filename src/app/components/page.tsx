@@ -48,9 +48,12 @@ export default function Home() {
             <div className="ml-5 sm:ml-0">
                 <p>Press <Keyboard>Ctrl</Keyboard> + <Keyboard>C</Keyboard> to copy.</p>
             </div>
-            <div>
+            <div className="space-y-5">
               <Accordion title="Section 1">
                 <p>This is the content of Section 1.</p>
+              </Accordion>
+              <Accordion title="Section 2" variant="secondary">
+                <p>This is the content of Section 2.</p>
               </Accordion>
             </div>
           </div>
