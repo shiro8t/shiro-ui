@@ -38,15 +38,33 @@
     color: #007bff;
 }
 .btn.danger {
-    box-shadow: 0px 1.5px 1.5px 1.5px rgba(244, 67, 54, .05);
-    border: 1px solid #f44336;
+    box-shadow: 0px 1.5px 1.5px 1.5px rgba(255, 37, 37, .05);
+    border: 1px solid #ff2525;
     background-color: #fff;
-    color: #f44336;
+    color: #ff2525;
 }
 .btn.text {
     box-shadow: none;
     background-color: #fff;
     color: #007bff;
+}
+/* focus フォーカス */
+.btn.primary:focus-visible {
+    outline: 2px solid rgba(0, 123, 255, .5);
+    outline-offset: 1.5px;
+}
+.btn.secondary:focus-visible {
+    outline: 2px solid rgba(0, 123, 255, .5);
+    outline-offset: 1.5px;
+    background-color: rgba(0, 123, 255, .05);
+}
+.btn.danger:focus-visible {
+    outline: 2px solid rgba(255, 37, 37, .5);
+    outline-offset: 1.5px;
+    background-color: rgba(255, 37, 37, .05);
+}
+.btn.text:focus-visible {
+    background-color: rgba(0, 123, 255, .075);
 }
 /* shape 形 */
 .btn.square {
@@ -103,10 +121,10 @@
     color: rgb(150, 150, 150);
 }
 .small .input-icon {
-    margin-right: 7px;
+    margin-right: 7.5px;
 }
 .medium .input-icon {
-    margin-right: 10px;
+    margin-right: 15px;
 }
 .large .input-icon {
     margin-right: 25px;
@@ -125,7 +143,7 @@
 /* card カード */
 .card {
     border-radius: 10px;
-    padding: 16px 20px;
+    padding: 15px 20px;
 }
 .card-title {
     margin: 0;
@@ -151,10 +169,10 @@
     box-shadow: 0 1.5px 1.5px 1.5px rgba(0, 123, 255, .05);
 }  
 .card.danger {
-    border: 1px solid #ff5555;
+    border: 1px solid #ff2525;
     background-color: #fff;
-    color: #ff5555;
-    box-shadow: 0 1.5px 1.5px 1.5px rgba(255, 85, 85, .05);
+    color: #ff2525;
+    box-shadow: 0 1.5px 1.5px 1.5px rgba(255, 37, 37, .05);
 }
 .card.text {
     color: rgb(25, 25, 25);
@@ -163,43 +181,12 @@
 /* keyboard キーボード */
 .keyboard {
     display: inline-block;
-    padding: 5px 10px;
+    padding: 3.5px 10px;
     line-height: 1.5;
     color: rgb(25, 25, 25);
     background-color: rgb(250, 250, 250);
     border: 1px solid rgb(200, 200, 200);
     border-radius: 2.5px;
-    box-shadow: 0 1px 0 #bbb, 0 2px 0 #888;
+    box-shadow: 0 1px 0 rgb(185, 185, 185), 0 2px 0 rgb(135, 135, 135);
     font-family: 'Courier New', Courier, monospace;
-}
-
-/* toast トースト */
-.toast {
-    padding: 10px 20px;
-    margin: 10px;
-    border-radius: 5px;
-    color: white;
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    z-index: 1000;
-    transition: opacity 0.3s ease;
-}  
-.toast-success {
-    border: 1px solid #4caf50;
-    background-color: #f3faf8;
-    color: #4caf50;
-    box-shadow: 0 1.5px 1.5px 1.5px rgba(76, 175, 80, .05);
-}
-.toast-error {
-    border: 1px solid #ff5555;
-    background-color: #fff7f7;
-    color: #ff5555;
-    box-shadow: 0 1.5px 1.5px 1.5px rgba(255, 85, 85, .05);
-}  
-.toast-info {
-    border: 1px solid #007bff;
-    background-color: #f2f8ff;
-    color: #007bff;
-    box-shadow: 0 1.5px 1.5px 1.5px rgba(0, 123, 255, .05);
 }

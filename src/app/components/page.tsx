@@ -4,22 +4,10 @@ import Button from "@/components/ui/Button";
 import Card from "@/components/ui/Card";
 import Input from "@/components/ui/Input";
 import Keyboard from "@/components/ui/Keyboard";
-import Toast from "@/components/ui/Toast";
 import { useState } from "react";
 import { FiSearch } from "react-icons/fi";
 
 export default function Home() {
-    const [showToast, setShowToast] = useState(false);
-    const [toastType, setToastType] = useState<'success' | 'info' | 'error'>('info');
-    const [toastMessage, setToastMessage] = useState('This is an success message!');
-
-    const handleShowToast = (type: 'success' | 'info' | 'error', message: string) => {
-        setToastType(type);
-        setToastMessage(message);
-        setShowToast(true);
-        setTimeout(() => setShowToast(false), 3000);
-    };
-
   return (
     <>
       <Header />
@@ -31,10 +19,10 @@ export default function Home() {
         {/* Components */}
           <div className="space-y-10">
             <div className="grid grid-cols-1 mx-5 sm:mx-0 sm:grid-cols-2 md:grid-cols-4 gap-5 lg:w-1/2">
-                <Button>Hello</Button>
-                <Button variant="secondary">Like Water</Button>
-                <Button variant="danger">28 Reasons</Button>
-                <Button variant="text">Wish You Hell</Button>
+                <Button>Primary</Button>
+                <Button variant="secondary" shape="rounded">Secondary</Button>
+                <Button variant="danger" shape="square">Danger</Button>
+                <Button variant="text">Text</Button>
             </div>
             <div className="ml-5 sm:ml-0">
                 <Input placeholder="Type here..." icon={<FiSearch />} />
@@ -57,18 +45,6 @@ export default function Home() {
                 <p>Press <Keyboard>Ctrl</Keyboard> + <Keyboard>C</Keyboard> to copy.</p>
             </div>
             <div>
-                <div className="space-x-2.5">
-                    <Button onClick={() => handleShowToast('success', 'This is a success message!')}>Show Success Toast</Button>
-                    <Button onClick={() => handleShowToast('info', 'This is an info message!')} variant="secondary">Show Info Toast</Button>
-                    <Button onClick={() => handleShowToast('error', 'This is an error message!')} variant="danger">Show Error Toast</Button>
-                </div>
-                {showToast && (
-                    <Toast
-                        message={toastMessage}
-                        type={toastType}
-                        onClose={() => setShowToast(false)}
-                    />
-                )}
             </div>
           </div>
         </div>

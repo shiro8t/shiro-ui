@@ -15,7 +15,7 @@ export default function Header() {
         <header className="z-50 sticky top-0 bg-white shadow px-3.5 py-2.5 bg-white bg-opacity-50 backdrop-blur flex items-center">
             <Link href="/" className="flex items-center">
                 <div className="w-[50px]">
-                    <img src="/logo.png" alt="Logo" className="w-full" />
+                    <img src="/logo-removebg.png" alt="Logo" className="w-full" />
                 </div>
                 <h1 className="text-2xl font-bold ml-2.5">Shiro UI</h1>
             </Link>
