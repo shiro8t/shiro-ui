@@ -256,13 +256,14 @@ summary::-webkit-details-marker {
     align-items: center;
     justify-content: space-between;
 }
+/* arrow 矢印 */
 .accordion-arrow {
     display: inline-block;
     width: 0;
     height: 0;
-    border-left: 7.5px solid transparent;
-    border-right: 7.5px solid transparent;
-    border-top: 12.5px solid currentColor;
+    border-left: 6.25px solid transparent;
+    border-right: 6.25px solid transparent;
+    border-top: 10px solid currentColor;
     transition: transform 0.25s ease;
 }
 details[open] .accordion-arrow {
@@ -298,7 +299,7 @@ details[open] .accordion-arrow {
     pointer-events: none;
     border-left: 5px solid transparent;
     border-right: 5px solid transparent;
-    border-top: 7.5px solid currentColor;
+    border-top: 8.5px solid currentColor;
     transform: translateY(-50%);
 }
 .select-container.primary {

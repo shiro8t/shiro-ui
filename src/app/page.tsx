@@ -1,5 +1,6 @@
 "use client"
 import Header from "@/components/Header";
+import Accordion from "@/components/ui/Accordion";
 import Button from "@/components/ui/Button";
 import Card from "@/components/ui/Card";
 import Image from "next/image";
@@ -41,6 +42,18 @@ export default function Home() {
             <Card title="Shiro UI: Now in Beta!" variant="secondary">
               Install with npm or yarn!
             </Card>
+          </div>
+          <hr className="my-10" />
+          <div className="mx-5 md:mx-0">
+            <h1 className="font-bold text-[32px] mb-5">About Shiro UI</h1>
+            <div>
+            <Accordion title="How can I install Shiro UI?">
+                There are currently 6 components.
+              </Accordion>
+              <Accordion title="How many components are in Shiro UI?">
+                You can install it with npm or yarn.
+              </Accordion>
+            </div>
           </div>
         </div>
       </main>
